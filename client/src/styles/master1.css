@@ -1,0 +1,246 @@
+:root{
+    --ptxt:#2F8E92;
+    --second--color:#181818;
+    /*#FDEDDC*/
+}
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    text-transform: capitalize;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    margin-top: 10px;
+    position: relative;
+    border-bottom: 5px solid black;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+/*small*/
+@media (max-width: 768px){
+    header {
+        flex-direction: column;
+    }
+}
+header a{
+    width: 35%;
+}
+
+header  nav{
+    width: 55%;
+}
+header  ul{
+    display: flex;
+    justify-content: space-around;
+}
+header  ul li{
+    padding: 10px;
+}
+header  ul li a{
+    color: var(--second--color);
+    font-size: 18px;
+}
+header  ul li:last-child{
+    background-color: var(--ptxt);
+    border-radius: 20px;
+}
+header  ul li:last-child a{
+    color: white;
+}
+/* start content  */
+
+
+
+ 
+
+
+.content  .home-sec0 img{
+border-radius: 30px;
+    width: 85px;
+
+    border: 2px solid var(--ptxt);
+}
+.content  .data{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.content  .data .home-sec1{
+width: 45%;
+}
+/*small*/
+@media (max-width: 768px){
+    .content  .data .home-sec1{
+display: none;
+    }
+}
+.content  .data .home-part2{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+/*small*/
+@media (max-width: 768px){
+    .content  .data .home-part2{
+        width: 100%; 
+}   
+}
+.content  .data .home-part2 .home-sec2{
+margin-top: 60px;
+display: flex;
+flex-direction: column;
+}
+.content  .data .home-part2 .home-sec2 h3{
+    font-size: 26px;
+    color: #4f595d;
+}
+.content  .data .home-part2 .home-sec2 p{
+    margin-top: 22px;
+    font-size: 15px;
+}
+.content  .data .home-part2 .home-sec3{
+    margin-top: 30px;
+}
+.content  .data .home-part2 .home-sec3 a{
+    padding: 10px;
+    color: black;
+    border-radius: 20px;
+    border: 2px solid var(--ptxt);
+    font-size: 20px;
+}
+.content  .data .home-part2 .home-sec3 a:nth-child(2){
+    background-color: var(--ptxt);
+    padding: 10px 30px;
+}
+.content  .data .home-part2 .home-sec4{
+    margin-top: 40px;
+    display: flex;
+}
+.content  .data .home-part2 .home-sec4 img{
+    width: 11.5%;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.content  .data .home-part2 .home-sec4 img:nth-child(2){
+    margin-right: -15px;
+}
+.content  .data .home-part2 .home-sec4 img:nth-child(1){
+    margin-right: -15px;
+}
+.content  .data .home-part2 .home-sec4 p{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+@media (max-width: 768px){
+    .content  .data .home-part2 .home-sec2 h3{
+text-align: center;
+}   
+    .content  .data .home-part2 .home-sec2 p{
+text-align: center;
+}   
+    .content  .data .home-part2 .home-sec3{
+        display: flex;
+        justify-content: center;
+}   
+    .content  .data .home-part2 .home-sec4{
+        display: flex;
+        justify-content: center;
+}   
+}
+/* start contact  */
+.contact{
+    margin-top: 130px;
+    margin-bottom: 80px;
+}
+.contact {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.contact  img{
+    width: 55%;
+}
+.contact  .info{
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.contact  .info h3{
+font-size: 35px;
+}
+.contact  .info p{
+font-size: 30px;
+margin-top: 10px;
+}
+.contact  .info .links{
+margin-top: 30px;
+}
+.contact  .info .links a{
+padding: 10px 20px;
+border-radius: 20px;
+border: 2px solid var(--ptxt);
+color: black;
+}
+.contact  .info .links a:last-of-type{
+    border: none;
+    color: white;
+    background-color: var(--ptxt);
+}
+@media (max-width: 768px){
+    .contact {
+flex-wrap: wrap;
+justify-content: center;  
+}
+.contact  img{
+    width: 75%;
+    margin-top: 20px;
+}
+.contact  .info .links{
+    display: flex;
+    justify-content: center;
+}
+}
+
+
+
+/* end contact */
+.backgroundEffect{
+    background-image:
+    linear-gradient(to bottom, var(--chor) 0, var(--hotxt),var(--chor)  ),
+    url('resourses/images/trucks.png');
+    width: 80%;
+    height: 400px;
+    background-size: cover;
+    padding: 20px;
+}
+.home-sec0 {
+    padding: 00px 10px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+ 
+}

@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+  
+:root  {
+  /* Background colors*/
+  --pbg:#f9fafb;
+  --sbg:#eff6ff;
+  --thbg:#d6f4f5;
+  --forthbg:#3b82f6;
+  --fifthbg:#1e40af;
+  /* Text colors*/
+  --ptxt:#00686B;
+  --stxt:#030712;
+  --thtxt:#6b7280;
+  --fotxt:#f9fafb;
+  --fitxt:#00969b;
+  --hotxt:'';
+  --actxt:''; 
+  --chtxt:#00969b44;
+  /* other colors*/
+  --pbor:#e2e8f0;
+  --sbor:#eff6ff;
+  --thbor:"";
+  --fibor:"";
+  --fobor:"";
+  --hoor:#93c5fd;
+  --acor:#60a5fa;
+
+  
+  --chor:#fcfcfc;
+  --hotxt:#a1e6e662;
+}
+
+:root .dark  {
+  /* Background colors*/
+  --pbg:#303035;
+  --sbg:#464646;
+  --thbg:#0e4446;
+  --forthbg:#3b82f6;
+  --fifthbg:#1e40af;
+  /* Text colors*/
+  --ptxt:#069ca1;
+  --stxt:#f8f8f8;
+  --thtxt:#9b9b9b;
+  --fotxt:#f9fafb;
+  --fitxt:#00969b;
+  --hotxt:'';
+  --actxt:''; 
+  --chtxt:#00f7ff44;
+
+
+  --hotxt:#151616d7;
+  --chor:#2d2f31;
+
+}
+*{
+  font-family:'poppins', sans-serif !important;
+}
+html[dir='rtl'] .slick-slide{ float: left !important}
