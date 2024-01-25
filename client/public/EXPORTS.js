@@ -14,12 +14,18 @@ const EXPORTS = {
     img7 : new URL('./resourses/images/img7.webp', import.meta.url).href,
     img8 : new URL('./resourses/images/img8.jpeg', import.meta.url).href,
     img9 : new URL('./resourses/images/img9.jpeg', import.meta.url).href,
+
+    p1 : new URL('./resourses/images/people/Person1.jpeg', import.meta.url).href,
+    p2 : new URL('./resourses/images/people/Person2.jpeg', import.meta.url).href,
+    p3 : new URL('./resourses/images/people/Person3.jpeg', import.meta.url).href,
+    p4 : new URL('./resourses/images/people/Person4.jpeg', import.meta.url).href,
+    
     bg : new URL('./resourses/images/bg.webp', import.meta.url).href,
     //svgs
     log : new URL('./resourses/svgs/log1.svg', import.meta.url).href,
     header : new URL('./resourses/svgs/header.svg', import.meta.url).href,
 
 }
-const {logo,bg,truck,euroTruck,draw,img1,img2,img3,img4,img5,img6,img7,img8,img9,log,header} = EXPORTS
+const {logo,bg,truck,euroTruck,draw,img1,img2,img3,img4,img5,img6,img7,img8,img9,log,header,p1,p2,p3,p4} = EXPORTS
 
-export {logo,bg,truck,euroTruck,draw,img1,img2,img3,img4,img5,img6,img7,img8,img9,log,header}
+export {logo,bg,truck,euroTruck,draw,img1,img2,img3,img4,img5,img6,img7,img8,img9,log,header,p1,p2,p3,p4}

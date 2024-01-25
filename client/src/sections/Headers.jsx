@@ -5,30 +5,55 @@ export const Headers = ({header}) => {
   const {h11,h22,h23,h24,h25} = header;
   return (
 
+<div className="DigitalHeader h-[70vh] flex justify-center items-center">
 
+<div className="px-12 ">
+  <div className="pt-5 flex flex-wrap items-center justify-center md:justify-start">
 
-<div className="content pb-16 z-10  h-[80vh] flex flex-wrap justify-center  items-center pt-20 relative overflow-hidden bg-slate-600 ">
-<div className="absolute backgroundEffect  start-0 top-0 w-full h-full bg-slate-400"
-
->
-{/* <img src={bg} alt="" className="w-full -z-10 object-cover h-full" /> */}
-</div>
-    <div className=" mx-auto px-8 z-20">
-        <div className="home-sec0 tracking-widest flex flex-wrap justify-center items-center text-center">
-          <h2 className="font-extrabold text-6xl uppercase text-stxt">
+    <div className="w-full md:w-1/2 text-center md:text-start">
+          <h2 className="font-extrabold text-4xl md:text-6xl uppercase text-stxt"
+                           data-aos-duration="1500"
+                           data-aos-offset="0"
+                           data-aos="fade-left"
+          
+          >
             <span className="font-thin me-3">{h11}</span>
             <br className="block md:hidden" />
             {h22}
-          <img src={euroTruck} className="object-cover inline h-full w-9 border-ptxt border-2 rounded-full" alt="" />
+          <img src={euroTruck} className="object-cover inline h-12 w-32 border-ptxt border-2 rounded-full" alt="" />
           {h23}
             <br />
             {h24}
             </h2>
-            <p className="w-full mt-3 text-ptxt">{h25} </p>
+            <p className="w-full mt-3 text-ptxt"
+                             data-aos-duration="1500"
+                             data-aos-offset="0"
+                             data-aos="fade-left"
+            
+            
+            
+            >{h25} </p>
         </div>
 
-        </div>
+    <div className="w-full md:w-1/2">
+          <img
+                 data-aos-duration="1500"
+                 data-aos-offset="0"
+                 data-aos="fade-left"
+            src={truck}
+            alt="logo"
+            loading="lazy"
+            className="DigitalHeader-logo w-full h-full  object-cover"
+          />
+   
+     
     </div>
+
+  </div>
+</div>
+</div>
+
+
 
   )
 }
@@ -66,3 +91,32 @@ export const Headers = ({header}) => {
 //         <img src={truck} className="" alt="Truck of QAFILAT ALOROUBA TRANSPORT." width={'100%'} />
 //         </div>
 //     </header>
+
+
+/*
+
+<div className="content pb-16 z-10  h-[80vh] flex flex-wrap justify-center  items-center pt-20 relative overflow-hidden bg-slate-600 ">
+<div className="absolute backgroundEffect  start-0 top-0 w-full h-full bg-slate-400"
+
+>
+
+
+</div>
+    <div className=" mx-auto px-8 z-20">
+        <div className="home-sec0 tracking-widest flex flex-wrap justify-center items-center text-center">
+          <h2 className="font-extrabold text-6xl uppercase text-stxt">
+            <span className="font-thin me-3">{h11}</span>
+            <br className="block md:hidden" />
+            {h22}
+          <img src={euroTruck} className="object-cover inline h-full w-9 border-ptxt border-2 rounded-full" alt="" />
+          {h23}
+            <br />
+            {h24}
+            </h2>
+            <p className="w-full mt-3 text-ptxt">{h25} </p>
+        </div>
+
+        </div>
+    </div>
+
+    */
