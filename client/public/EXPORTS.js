@@ -16,9 +16,9 @@ const EXPORTS = {
     img9 : new URL('./resourses/images/img9.jpeg', import.meta.url).href,
 
     p1 : new URL('./resourses/images/people/Person1.jpeg', import.meta.url).href,
-    p2 : new URL('./resourses/images/people/Person2.jpeg', import.meta.url).href,
-    p3 : new URL('./resourses/images/people/Person3.jpeg', import.meta.url).href,
-    p4 : new URL('./resourses/images/people/Person4.jpeg', import.meta.url).href,
+    p2 : new URL('./resourses/images/people/Person2.png', import.meta.url).href,
+    p3 : new URL('./resourses/images/people/Person3.jpg', import.meta.url).href,
+    p4 : new URL('./resourses/images/people/Person4.jpg', import.meta.url).href,
     
     bg : new URL('./resourses/images/bg.webp', import.meta.url).href,
     //svgs
