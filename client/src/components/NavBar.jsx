@@ -15,6 +15,7 @@ export const NavBar = ({setThemetoggle,theme,sections,btn,language,setLanguage})
     const handelTheme = () =>{
       
         setThemetoggle(prev =>!prev)
+        setShow(false)
     }
     const handelLanguage = () =>{
       if(language === 'En'){
@@ -27,14 +28,14 @@ export const NavBar = ({setThemetoggle,theme,sections,btn,language,setLanguage})
         document.getElementsByTagName('html')[0].dir = 'ltr';
       }
        
-
+setShow(false)
    
     }
   return (
     
 
-<nav className="bg-pbg fixed top-0 start-0 z-50 w-full  backdrop-blur-5xl  "  onBlur={()=>setShow(false)}>
-  <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pe-3 relative">
+<nav className="bg-pbg sticky top-0 start-0  z-50 w-full  backdrop-blur-5xl  "  >
+  <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pe-3 relative" >
     <a href="" className="flex items-center space-x-3 rtl:space-x-reverse flex-col">
         <img src={logo} className="w-48 brightness-200 " alt="QAFILAT ALOROUBA TRANSPORT." />
     </a>
@@ -46,7 +47,7 @@ export const NavBar = ({setThemetoggle,theme,sections,btn,language,setLanguage})
     </button>
 
     
-    <div className={`w-full md:flex p-4 md:w-auto bg-pbg z-40  ${show?'show absolute top-20 ':'hidden'}`} id="navbar-default">
+    <div className={`w-full sta md:flex p-4 md:w-auto bg-pbg z-40  ${show?'show absolute top-20 ':'hidden'}`} id="navbar-default">
       <ul className="font-medium flex flex-col p-4 md:p-0  mt-5   rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-2 ">
         {sections?.map((section,i)=>{
             return(
@@ -58,12 +59,12 @@ export const NavBar = ({setThemetoggle,theme,sections,btn,language,setLanguage})
 
       </ul>
       <ul className="font-medium items-center flex justify-between p-4 md:p-0   rounded-lg  md:flex-row md:space-x-4 rtl:space-x-reverse md:mt-0 ">
-      <li onClick={handelLanguage}>
+      <li onClick={handelLanguage} className="md:p-0 p-2 ">
           <button  className={`${language == 'En'?"bg-green-500 hover:bg-green-400 text-fotxt":"bg-violet-800 hover:bg-violet-700 text-fotxt"}  text-sm  hover:shadow-lg  transition-all w-9 h-9 flex items-center justify-center rounded-full  cursor-pointer`}>
             {language === 'En'?'Ar':'en'}
           </button>
         </li>
-      <li onClick={handelTheme}>
+      <li onClick={handelTheme} className="md:p-0 p-2">
           <button  className={`${!theme?"bg-orange-500 hover:bg-orange-400 text-fotxt":"bg-violet-800 hover:bg-violet-700 text-fotxt"}  text-lg  hover:shadow-lg  transition-all w-9 h-9 flex items-center justify-center rounded-full  cursor-pointer`}>
           {!theme?<BsSun className="" />
 :<BsMoon  className="" />}
@@ -71,7 +72,7 @@ export const NavBar = ({setThemetoggle,theme,sections,btn,language,setLanguage})
         </li>
 
         <li onClick={handelCall}>
-          <a href="#" className="bg-ptxt  hover:bg-fitxt hover:shadow-lg text-xs transition-all px-7 py-2.5 rounded-3xl text-fotxt cursor-pointer">{btn}</a>
+          <a href="" className="bg-ptxt  hover:bg-fitxt hover:shadow-lg text-xs transition-all px-7 py-2.5 rounded-3xl text-fotxt cursor-pointer">{btn}</a>
         </li>
       </ul>
     </div>

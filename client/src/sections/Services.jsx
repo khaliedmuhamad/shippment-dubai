@@ -44,7 +44,7 @@ useEffect(() => {
 
 
   return (
-    <div className='px-8 py-24  bg-pbg  relative   '>
+    <div className='px-8 py-24  bg-pbg  relative  w-full overflow-hidden '>
 
       <motion.div
         className="mt-0 flex justify-center align-center md:flex-row flex-col"

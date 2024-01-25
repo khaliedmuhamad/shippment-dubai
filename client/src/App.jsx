@@ -30,8 +30,8 @@ export const  App = () => {
 
 
   return (
-    <div className={`bg-pbg ${theme?'light':'dark'}`}>
-           <div className="fixed left-10 bottom-10 bg-ptxt text-zinc-50  opacity-75 hover:opacity-100 p-2 rounded-full z-50">
+    <div className={`bg-pbg ${theme?'light':'dark'} overflow-hidden`}>
+           <div className="fixed start-10 bottom-10 bg-ptxt text-zinc-50  opacity-75 hover:opacity-100 p-2 rounded-full z-50">
         <button
           className=" rounded-full w-6 h-9  flex justify-center items-center"
           onClick={toUpFn}

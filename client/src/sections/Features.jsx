@@ -12,7 +12,7 @@ export const Features = ({features}) => {
     <GoLocation key={0} />,<FaStoreAlt key={1} />,<MdAttachMoney key={3} />,<BsHouseDoor  key={4}/>
   ]
   return (
-<section className='features bg-pbg' id='features'>
+<section className='features bg-pbg w-full overflow-hidden' id='features'>
   <div className='features-overlay lg:px-32 px-8'>
     <div className=' '>
       <p className='text-thtxt text-lg  text-center'>{features?.p}</p>
