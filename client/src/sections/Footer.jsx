@@ -10,13 +10,13 @@ export const Footer = ({footer}) => {
   const {paragraph,p1,p2,li,sections,h1,btn,pla} = footer;
   return (
     <footer className='bg-thbg  px-8 pt-32 pb-5  items-center relative' >
-      <div className="absolute top-0 right-0 ">
+      <div className="absolute top-0 right-0 z-10">
       <svg width="153" height="232" viewBox="0 0 283 382" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="322.5" cy="59.5" r="262.5" stroke={'var(--sbg)'} strokeWidth="120"/>
 </svg>
 
       </div>
-      <div className="absolute bottom-0 left-0 ">
+      <div className="absolute bottom-0 left-0 z-10">
       <svg width="146" height="174" viewBox="0 0 146 174" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle opacity="0.35" cx="-3.5" cy="149.5" r="119.5" stroke={'var(--sbg)'} strokeWidth="60"/>
 </svg>
@@ -24,7 +24,7 @@ export const Footer = ({footer}) => {
 
       </div>
 
-        <div className="flex flex-col md:flex-row justify-center items-start flex-wrap">
+        <div className="relative z-20 flex flex-col md:flex-row justify-center items-start flex-wrap">
         <div className="brand text-3xl font-extrabold text-stxt text-center w-full mb-8 self-center">
                     <img src={logo} className="w-[240px]" />
       </div>
