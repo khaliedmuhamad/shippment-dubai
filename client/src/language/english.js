@@ -3,6 +3,7 @@ import { img1,img2,img3,img4,img5,img6,img7,img8,img9 } from "../../public/EXPOR
 
 export const English = {
     navbar:{
+      btn:" contact",
         sections: [
             {
                 head:"Home",

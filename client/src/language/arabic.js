@@ -6,6 +6,7 @@ import React from "react";
 
 export const Arabic = {
     navbar:{
+      btn:"اتصل بنا",
         sections: [
             {
                 head:"الرئيسية",

@@ -12,7 +12,7 @@ import { Footer } from "./sections/Footer"
 import { truck } from "../public/EXPORTS"
 import { Headers } from "./sections/Headers"
 import { multilang } from "./language/handelLanguage";
-
+import {BsArrowUp} from '@react-icons/all-files/bs/BsArrowUp'
 export const  App = () => {
 
     useEffect(() => {
@@ -31,22 +31,17 @@ export const  App = () => {
 
   return (
     <div className={`bg-pbg ${theme?'light':'dark'}`}>
-           <div className="fixed left-10 bottom-10 bg-blue-500/25 hover:bg-blue-500  p-2 rounded-full z-50">
+           <div className="fixed left-10 bottom-10 bg-ptxt text-zinc-50  opacity-75 hover:opacity-100 p-2 rounded-full z-50">
         <button
-          className=" rounded-full w-10 h-10  flex justify-center items-center"
+          className=" rounded-full w-6 h-9  flex justify-center items-center"
           onClick={toUpFn}
           role="button"
           aria-label=""
         >
-          <img
-            src={truck}
-            alt="Go To up"
-            className="w-full rounded-full "
-            width={"100%"}
-          />
+  <BsArrowUp className="text-3xl animate-bounce"/>
         </button>
       </div>
-    <NavBar language={language} setLanguage={setLanguage} theme={theme} setThemetoggle={setTheme} sections={multilang(language).navbar.sections} />
+    <NavBar btn={multilang(language).navbar.btn} language={language} setLanguage={setLanguage} theme={theme} setThemetoggle={setTheme} sections={multilang(language).navbar.sections} />
   
     <div id="Header"
     

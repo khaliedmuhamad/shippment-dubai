@@ -3,7 +3,7 @@ import { logo } from "../../public/EXPORTS"
 import { BsSun } from "@react-icons/all-files/bs/BsSun"
 import { BsMoon  } from "@react-icons/all-files/bs/BsMoon"
 
-export const NavBar = ({setThemetoggle,theme,sections,language,setLanguage}) => {
+export const NavBar = ({setThemetoggle,theme,sections,btn,language,setLanguage}) => {
     const [show,setShow] = useState(false)
     
 
@@ -36,7 +36,7 @@ export const NavBar = ({setThemetoggle,theme,sections,language,setLanguage}) => 
 <nav className="bg-pbg fixed top-0 start-0 z-50 w-full  backdrop-blur-5xl  "  onBlur={()=>setShow(false)}>
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pe-3 relative">
     <a href="" className="flex items-center space-x-3 rtl:space-x-reverse flex-col">
-        <img src={logo} className="w-48  " alt="QAFILAT ALOROUBA TRANSPORT." />
+        <img src={logo} className="w-48 brightness-200 " alt="QAFILAT ALOROUBA TRANSPORT." />
     </a>
     <button onClick={()=>setShow(prev => !prev)} data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-16 h-16 justify-center text-sm text-thtxt rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:ring-thtxt" aria-controls="navbar-default" aria-expanded="false">
         <span className="sr-only">Open main menu</span>
@@ -71,7 +71,7 @@ export const NavBar = ({setThemetoggle,theme,sections,language,setLanguage}) => 
         </li>
 
         <li onClick={handelCall}>
-          <a href="#" className="bg-ptxt  hover:bg-fitxt hover:shadow-lg text-xs transition-all px-7 py-2.5 rounded-3xl text-fotxt cursor-pointer">Contact</a>
+          <a href="#" className="bg-ptxt  hover:bg-fitxt hover:shadow-lg text-xs transition-all px-7 py-2.5 rounded-3xl text-fotxt cursor-pointer">{btn}</a>
         </li>
       </ul>
     </div>

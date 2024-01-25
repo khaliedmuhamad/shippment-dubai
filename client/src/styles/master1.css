@@ -232,7 +232,7 @@ justify-content: center;
 .backgroundEffect{
     background-image:
     linear-gradient(to bottom, var(--chor) 0, var(--hotxt),var(--chor)  ),
-    url('resourses/images/trucks.png');
+    url('/resourses/images/trucks.png');
     width: 80%;
     height: 400px;
     background-size: cover;
