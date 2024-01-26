@@ -36,7 +36,7 @@ export const English = {
         h22:"L",
         h23:"gistics",
         h24:" & cargo services",
-        h25:"QAFILAT ALOROUBA TRANSPORT",
+        h25:"Welcome to QAFILAT ALOROUBA TRANSPORT, your go-to for efficient logistics and cargo services. Whether it's by air, sea, or land, we ensure the safe and timely delivery of your goods. With a dedicated team and a global network, we provide tailored solutions to meet your unique needs.",
     },
     services:{
    

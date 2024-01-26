@@ -19,6 +19,12 @@ const EXPORTS = {
     p2 : new URL('./resourses/images/people/Person2.png', import.meta.url).href,
     p3 : new URL('./resourses/images/people/Person3.jpg', import.meta.url).href,
     p4 : new URL('./resourses/images/people/Person4.jpg', import.meta.url).href,
+
+    costco : new URL('./resourses/images/costco.png', import.meta.url).href,
+    amazone : new URL('./resourses/images/amazon.png', import.meta.url).href,
+    power : new URL('./resourses/images/power.png', import.meta.url).href,
+    tesco : new URL('./resourses/images/tesco.png', import.meta.url).href,
+    microsoft : new URL('./resourses/images/microsoft.png', import.meta.url).href,
     
     bg : new URL('./resourses/images/bg.webp', import.meta.url).href,
     //svgs
@@ -26,6 +32,6 @@ const EXPORTS = {
     header : new URL('./resourses/svgs/header.svg', import.meta.url).href,
 
 }
-const {logo,bg,truck,euroTruck,draw,img1,img2,img3,img4,img5,img6,img7,img8,img9,log,header,p1,p2,p3,p4} = EXPORTS
+const {logo,bg,truck,euroTruck,draw,img1,img2,img3,img4,img5,img6,img7,img8,img9,log,header,p1,p2,p3,p4,costco, amazone, power, tesco, microsoft} = EXPORTS
 
-export {logo,bg,truck,euroTruck,draw,img1,img2,img3,img4,img5,img6,img7,img8,img9,log,header,p1,p2,p3,p4}
+export {logo,bg,truck,euroTruck,draw,img1,img2,img3,img4,img5,img6,img7,img8,img9,log,header,p1,p2,p3,p4,costco, amazone, power, tesco, microsoft}

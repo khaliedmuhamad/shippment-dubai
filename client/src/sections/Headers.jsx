@@ -20,7 +20,7 @@ export const Headers = ({header}) => {
             <span className="font-thin me-3">{h11}</span>
             <br className="block md:hidden" />
             {h22}
-          <img src={euroTruck} className="object-cover inline h-12 w-32 border-ptxt border-2 rounded-full" alt="" />
+          <img src={euroTruck} className="object-cover inline h-12 w-32 mx-3 border-ptxt border-2 rounded-full" alt="" />
           {h23}
             <br />
             {h24}

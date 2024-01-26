@@ -15,6 +15,7 @@ import { multilang } from "./language/handelLanguage";
 import {BsArrowUp} from '@react-icons/all-files/bs/BsArrowUp'
 import { Footer } from "./sections/Footer/Footer";
 import OurTeam from "./sections/OurTeam/OurTeam";
+import { Sponsors } from "./sections/sponsors/Sponsors";
 export const  App = () => {
 
     useEffect(() => {
@@ -51,6 +52,7 @@ export const  App = () => {
     
     
     >  <Headers header={multilang(language).header}  /></div>
+    <Sponsors />
     <div id="Services"
     
 
