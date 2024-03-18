@@ -9,8 +9,7 @@ const OurTeam = ({ourteam}) => {
 
   let peopleLang1 = ourteam.people[0];
   let peopleLang2 = ourteam.people[1];
-  let peopleLang3 = ourteam.people[2];
-  let peopleLang4 = ourteam.people[3];
+
 
   const people = [
     {
@@ -26,21 +25,7 @@ const OurTeam = ({ourteam}) => {
       name: peopleLang2.name,
       title: peopleLang2.title,
       quote: peopleLang2.quote,
-    },
-    {
-      id: 3,
-      image: p3,
-      name: peopleLang3.name,
-      title: peopleLang3.title,
-      quote: peopleLang3.quote,
-    },
-    {
-      id: 4,
-      image: p4,
-      name: peopleLang4.name,
-      title: peopleLang4.title,
-      quote: peopleLang4.quote,
-    },
+    }
   ];
 
   useEffect(() => {
@@ -65,7 +50,7 @@ const OurTeam = ({ourteam}) => {
   return (
     <section className="section my-5">
       <div className="title">
-        <h2>our Teams </h2>
+        <h2>our Team </h2>
       </div>
       <div className="section-center">
         {people.map((item, indexPeople) => {

@@ -65,7 +65,6 @@ export const English = {
             {title:'Loading and Unloading of Cargo Containers',pragraph:"We provide effective and secure loading and unloading services for cargo containers."},
             {title:'Warehousing',pragraph:"Our secure and well-equipped warehousing facilities accommodate a variety of goods, offering safe storage solutions."},
             {title:'Refrigerated Land Transport',pragraph:"Our specialized team ensures the safe transportation of temperature-sensitive goods on land."},
-            
             ]
         },
       ]
@@ -75,7 +74,6 @@ export const English = {
         p:"Why ship with us?",
         list:[
             {
-   
             head:"Reliable Land Transport",
             p:"Our company is dedicated to providing reliable and efficient land transport services, both within the United Arab Emirates and internationally."
             },
@@ -127,8 +125,8 @@ export const English = {
         h4:"experimentation of the message and smart incentives.",
     },footer: {
         paragraph: "LOGISTICS & CARGO SERVICE QAFILAT ALOROUBA TRANSPORT",
-        p1: "123 Market St. Cairo, Egypt",
-        p2: "123 Market St. Cairo, Egypt",
+        p1: "Riyadh ,Saudi Arabia",
+        p2: "Dubai, United Arab Emirates",
         li: "Quick Links",
         sections: [
           {
@@ -162,29 +160,18 @@ export const English = {
       },  ourteam: {
         people: [
           {
-            name: "Haryy Stamper",
-            title: "manager",
+            name: "Salem AL Ameri ",
+            title: "General Manager",
             quote:
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+              "",
           },
           {
-            name: "James Gun",
-            title: "Project Manager",
+            name: "Mohamed Kieri",
+            title: "Executive Manager",
             quote:
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
-          },
-          {
-            name: "Michael Mosely",
-            title: "Product Manager",
-            quote:
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-          },
-          {
-            name: "James Van",
-            title: "Vice President",
-            quote:
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-          },
+              "",
+          }
+
         ],
       },
 }

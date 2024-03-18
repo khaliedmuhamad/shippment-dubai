@@ -73,7 +73,7 @@ export const Footer = ({footer}) => {
         
 
         <div className="w-full flex justify-end items-end flex-wrap text-ptxt/25">
-        © 2024  QAT. All rights reserved. 
+        © 2024  QAT. All rights reserved.  
         </div>
     </footer>
   )
